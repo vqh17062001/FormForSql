@@ -49,7 +49,7 @@ namespace FormForSql
         private void button_add_Click(object sender, EventArgs e)
         {
             if (listBox_choose.SelectedIndex == 0) {
-                MessageBox.Show("choosed 0 hello ");
+                MessageBox.Show("choosed 0 hello huy ");
 
             
             }
