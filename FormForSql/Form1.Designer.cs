@@ -39,12 +39,13 @@
             // dataGridViewfordata
             // 
             this.dataGridViewfordata.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewfordata.Location = new System.Drawing.Point(12, 57);
+            this.dataGridViewfordata.Location = new System.Drawing.Point(16, 51);
             this.dataGridViewfordata.Name = "dataGridViewfordata";
             this.dataGridViewfordata.RowHeadersWidth = 62;
             this.dataGridViewfordata.RowTemplate.Height = 28;
-            this.dataGridViewfordata.Size = new System.Drawing.Size(1001, 207);
+            this.dataGridViewfordata.Size = new System.Drawing.Size(1000, 208);
             this.dataGridViewfordata.TabIndex = 1;
+            this.dataGridViewfordata.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewfordata_CellContentClick);
             // 
             // listBox_choose
             // 
@@ -53,7 +54,7 @@
             this.listBox_choose.Items.AddRange(new object[] {
             "THUỐC",
             "NSX"});
-            this.listBox_choose.Location = new System.Drawing.Point(43, 300);
+            this.listBox_choose.Location = new System.Drawing.Point(44, 300);
             this.listBox_choose.Name = "listBox_choose";
             this.listBox_choose.Size = new System.Drawing.Size(102, 44);
             this.listBox_choose.TabIndex = 2;
@@ -61,7 +62,7 @@
             // 
             // button_add
             // 
-            this.button_add.Location = new System.Drawing.Point(43, 368);
+            this.button_add.Location = new System.Drawing.Point(44, 368);
             this.button_add.Name = "button_add";
             this.button_add.Size = new System.Drawing.Size(75, 52);
             this.button_add.TabIndex = 3;
@@ -80,9 +81,9 @@
             // 
             // button_delete
             // 
-            this.button_delete.Location = new System.Drawing.Point(299, 362);
+            this.button_delete.Location = new System.Drawing.Point(298, 362);
             this.button_delete.Name = "button_delete";
-            this.button_delete.Size = new System.Drawing.Size(75, 76);
+            this.button_delete.Size = new System.Drawing.Size(75, 75);
             this.button_delete.TabIndex = 5;
             this.button_delete.Text = "Xóa";
             this.button_delete.UseVisualStyleBackColor = true;
@@ -91,7 +92,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1025, 450);
+            this.ClientSize = new System.Drawing.Size(1024, 449);
             this.Controls.Add(this.button_delete);
             this.Controls.Add(this.button_set);
             this.Controls.Add(this.button_add);
@@ -99,6 +100,7 @@
             this.Controls.Add(this.dataGridViewfordata);
             this.Name = "FormforSQL";
             this.Text = "SQL_data";
+            this.Load += new System.EventHandler(this.FormforSQL_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewfordata)).EndInit();
             this.ResumeLayout(false);
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FormForSql.NhatForm;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace FormForSql
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormforSQL());
+            Application.Run(new frmQuanLyKho());
         }
     }
 }

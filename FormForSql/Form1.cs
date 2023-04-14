@@ -33,7 +33,7 @@ namespace FormForSql
 
         DataSet filldata(string SQLconmand) { 
             DataSet data = new DataSet();
-            string connetionstring = "Data Source=ZEPHYRUSG14\\MSSQLSERVER01;Initial Catalog=QL_THUOC;Persist Security Info=True;User ID=sa;Password=Qnvn16062001@";
+            string connetionstring = "Data Source=ESTELLA\\QLT;Initial Catalog=QL_THUOC;Integrated Security=True";
             
             using (SqlConnection sqlConnection = new SqlConnection(connetionstring)) { 
                 sqlConnection.Open();
@@ -56,6 +56,16 @@ namespace FormForSql
             if (listBox_choose.SelectedIndex == 1) { 
                 MessageBox.Show("choosed 1");
             }
+
+        }
+
+        private void dataGridViewfordata_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void FormforSQL_Load(object sender, EventArgs e)
+        {
 
         }
     }

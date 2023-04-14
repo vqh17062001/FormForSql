@@ -44,5 +44,15 @@ namespace FormForSql.Properties {
                 return ((string)(this["QL_THUOCConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ESTELLA\\QLT;Initial Catalog=QL_THUOC;Integrated Security=True")]
+        public string QL_THUOCConnectionString1 {
+            get {
+                return ((string)(this["QL_THUOCConnectionString1"]));
+            }
+        }
     }
 }
