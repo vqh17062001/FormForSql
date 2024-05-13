@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+// comment them vao de test loi
 namespace FormForSql
 {
     public partial class FormforSQL : Form
